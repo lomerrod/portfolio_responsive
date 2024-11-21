@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>Mi Portfolio</h1>
+            <ul class="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#portfolio">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a id="cv" href="/pdf/Lorena_Rodriguez_DEV_2024.pdf" target="_blank" class="btn">Ver CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Página de Inicio -->
+    <header id="home" class="hero-section">
+        <div class="hero-content container">
+            <h1>¡Hola!</h1>
+            <div class="profile-photo text-center">
+                <img src="/img/perfil.jpeg" alt="Foto de perfil">
+            </div>
+            <h2>Soy Lorena Rodriguez</h2>
+            <p>Desarrolladora web y analista de datos</p>
+        </div>
+    </header>
+
+    <!-- Sobre Mí -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <div class="about-content text-center">
+                <div class="about-text">
+                    <p>Transformo ideas en proyectos web funcionales y visualmente atractivos.</p>
+                    <p>Tengo experiencia en HTML, CSS, JavaScript, y habilidades en comunicación, trabajo en equipo y resolución de problemas.</p>
+                    <div class="hobbies-photos">
+                        <h3>Mis hobbies:</h3>
+                        <img src="/img/atardecer.jpg" alt="atardecer">
+                        <img src="/img/libro.jpg" alt="libro">
+                        <img src="/img/viajar.jpg" alt="viajar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>Mis proyectos</h2>
+            <div class="projects col-6">
+                <div class="project-card">
+                    <h3>Proyecto eCommerce</h3>
+                    <p>Página web eCommerce en proyecto grupal.</p>
+                    <a href="https://ximenap1205.github.io/proyectofinal/" target="_blank" class="btn">Ver proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Japflix</h3>
+                    <p>Plataforma con reseñas de películas.</p>
+                    <a href="https://lomerrod.github.io/japflix/" target="_blank" class="btn">Ver proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Buscador de imágenes de la NASA</h3>
+                    <p>Búsqueda de imágenes a partir de la API de la NASA.</p>
+                    <a href="https://lomerrod.github.io/tallersem14/" class="btn">Ver proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Formularios de productos y usuarios</h3>
+                    <p>Aplicación de operadores REST y SPREAD.</p>
+                    <a href="https://lomerrod.github.io/spreadyrest/" class="btn">Ver proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Lorena Rodriguez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
