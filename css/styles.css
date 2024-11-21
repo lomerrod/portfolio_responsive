@@ -1,0 +1,322 @@
+:root {
+    --color-bg: #d4f0d4; 
+    --color-primary: #9fd39f; 
+    --color-secondary: #5cab5c; 
+    --color-text: #34495e; 
+    --color-button: #3a8c3a; 
+    --color-button-hover: #2f703f;
+    --shadow-color: rgba(0, 0, 0, 0.1); 
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.container {
+    width: 80%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* menu */
+
+.menu-toggle {
+    display: none; 
+    font-size: 2rem; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-button-hover); 
+}
+
+/* Navegación */
+.navbar {
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: var(--color-secondary);
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cv {
+    color: #ffff;
+}
+
+.nav-menu a:hover {
+    color: var(--color-secondary);
+}
+
+/* Página de inicio */
+.hero-section {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 3.75rem 1.25rem;
+    text-align: center;
+    box-shadow: 0rem 1.25rem 1.25rem var(--shadow-color);
+}
+
+.hero-content h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.hero-content h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 1.25rem 0;
+}
+
+/* Sección sobre mí */
+.about-section {
+    padding: 2.5rem 1.25rem;
+    text-align: center;
+    box-shadow: 0rem 0.3125rem 0.9375rem var(--shadow-color); 
+}
+
+.about-content {
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.profile-photo img {
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--color-secondary);
+    box-shadow: 0rem 0.3125rem 0.9375rem var(--shadow-color);
+}
+
+.hobbies-photos img {
+    width: 15.625rem;
+    height: 15.625rem;
+    border-radius: 0.625rem;
+    margin: 0.3125rem;
+    border: 0.1875rem solid var(--color-secondary);
+    box-shadow: 0rem 0.1875rem 0.625rem var(--shadow-color);
+}
+
+/* Portfolio */
+.portfolio-section {
+    padding: 2.5rem 1.25rem;
+    text-align: center;
+    box-shadow: 0rem 0.3125rem 0.9375rem var(--shadow-color); 
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* dos columnas de igual ancho */
+    gap: 1.25rem; 
+}
+
+.project-card {
+    background-color: var(--color-secondary);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 0rem 0.3125rem 0.9375rem var(--shadow-color); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0rem 0.625rem 1.5625rem var(--shadow-color); 
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.btn {
+    background-color: var(--color-button);
+    color: #ffffff;
+    padding: 0.625rem 0.9375rem;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0rem 0.1875rem 0.625rem var(--shadow-color); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-button-hover);
+    box-shadow: 0rem 0.3125rem 0.9375rem var(--shadow-color);
+}
+
+/* Contacto */
+.contact-section {
+    padding: 2.5rem 1.25rem;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    text-align: center;
+    box-shadow: 0rem 0.3125rem 0.9375rem var(--shadow-color); 
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 0.625rem;
+    border: 0.125rem solid var(--color-secondary);
+    border-radius: 0.3125rem;
+    box-shadow: 0rem 0.1875rem 0.625rem var(--shadow-color); 
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-secondary);
+    color: white;
+    text-align: center;
+    padding: 0.625rem 0;
+    box-shadow: 0rem -0.3125rem 0.9375rem var(--shadow-color); 
+}
+
+/* celular */
+@media (max-width: 37.5rem) { 
+
+    .container {
+        width: 80%;
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute; 
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa; 
+        padding: 1rem;
+        box-shadow: 0rem 0.1875rem 0.625rem var(--shadow-color);
+        z-index: 1000;
+    }
+
+    .nav-menu.show {
+        display: flex; 
+    }
+
+    .nav-menu li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-section {
+        padding: 2.5rem 1rem; 
+    }
+
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem; 
+    }
+
+    .hero-content p {
+        font-size: 1.25rem;
+    }
+
+    .projects {
+        grid-template-columns: 1fr; 
+        gap: 1rem; 
+    }
+
+    .profile-photo img,
+    .hobbies-photos img {
+        width: 12.5rem; 
+        height: 12.5rem;
+    }
+
+    .contact-section form {
+        max-width: 100%; 
+    }
+
+    .footer p {
+        font-size: 0.8125rem;
+    }
+}
+
+/* tablet */
+@media (min-width: 37.5rem) and (max-width: 64rem) { 
+    .container {
+        width: 90%; 
+        padding: 0 1.5rem;
+    }
+
+    .navbar .container {
+        flex-direction: column; 
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        padding: 1rem; 
+    }
+
+    .contact-section form {
+        max-width: 80%; 
+    }
+
+    .footer p {
+        font-size: 0.875rem; 
+    }
+}
